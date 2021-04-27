@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Sitio Oficial de Trebol Nite, página de contacto directo">
+	<meta name="keyword" content="contactame, contacto, Trebol, Trebol Nite, venezuela">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="imagenes/logos/Favicon.svg" type="image/svg">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="scss/main.css">
+	<title>Contáctame | Trebol Nite</title>
+</head>
+<body>
+	<section class="header">
+		<nav class="nav">
+			<a href="index.html"><img class="nav__img" src="imagenes/logos/logoBlancoT.svg" alt="Logo"></a>
+			<div class="nav__links" id="navLinks">
+				<i class="fas fa-times" onclick="hideMenu()"></i>
+				<ul class="nav__ul">
+					<li class="nav__ul__li"><a class="nav__a" href="index.html">HOME</a></li>
+					<li class="nav__ul__li"><a class="nav__a" href="trayectoria.html">TRAYECTORIA</a></li>
+					<li class="nav__ul__li"><a class="nav__a" href="discografia.html">DISCOGRAFÍA</a></li>
+					<li class="nav__ul__li"><a class="nav__a" href="contactame.html">CONTÁCTAME</a></li>
+					<li class="nav__ul__li"><a class="nav__a" href="kitDePrensa.html">KIT DE PRENSA</a></li>
+				</ul>
+			</div>
+			<i class="fas fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+		<div class="contact">
+			<h1 class="contact__titulo">Contactame</h1>
+			<div class="contact__container">
+				<div class="contact__input-fields">
+					<input type="text" class="input" placeholder="Nombre">
+					<input type="text" class="input" placeholder="Correo">
+					<input type="text" class="input" placeholder="Asunto">
+				</div>
+				<div class="contact__message">
+					<textarea placeholder="Mensaje"></textarea>
+					<button class="contact__button">ENVIAR</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!--Footer-->
+
+	<section class="footer--small">
+		<div class="footer--small__icons">
+			<a href="https://twitter.com/tavotrebol" target="_BLANK"><i class="fa fa-twitter fa-2x"></i></a>
+			<a href="https://www.instagram.com/tavotrebol/" target="_BLANK"><i class="fa fa-instagram fa-2x"></i></a>
+			<a href="https://open.spotify.com/artist/2oKrQcEnwikr0T2FXPhQPt" target="_BLANK"><i class="fa fa-spotify fa-2x"></i></a>
+			<a href="https://www.youtube.com/channel/UC4w1yh9Y1Qun6ubFF2DW_AA" target="_BLANK"><i class="fa fa-youtube-play fa-2x"></i></a>
+		</div>
+		<div class="footer--small__bottom">
+			<p class="footer--small__parrafo2">Copyright &copy;2021. Designed by <span class="footer--small__span">Miguel Cárdenas</span></p>
+		</div>
+	</section>
+
+	<!--JavaScript-->
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/6bf566be2c.js" crossorigin="anonymous"></script>
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+</body>
+</html>

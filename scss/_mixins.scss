@@ -1,0 +1,18 @@
+@mixin botones{
+    display: inline-block;
+	text-decoration: none;
+	border-radius: 5px;
+	color: $white;
+	border: 1px solid $white;
+	padding: 12px 34px;
+	font-size: 1em;
+    text-transform: uppercase;
+	background: transparent;
+	position: relative;
+	transition: 0.4s linear;
+	cursor: pointer;
+    &:hover{
+        background: $green;	
+        color: $white;
+    }
+}

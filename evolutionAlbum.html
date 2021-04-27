@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Sitio Oficial de Trebol Nite, Evolution disco publicado en el año 2013">
+	<meta name="keyword" content="disco, discografía, evolution, 2013, Trebol, Trebol Nite, venezuela, música, artistica">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="imagenes/logos/Favicon.svg" type="image/svg">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="scss/main.css">
+	<title>Evolution Album | Trebol Nite</title>
+</head>
+<body>
+	<section class="header">
+		<nav class="nav">
+			<a href="index.html"><img class="nav__img" src="imagenes/logos/logoBlancoT.svg" alt="Logo"></a>
+			<div class="nav__links" id="navLinks">
+				<i class="fas fa-times" onclick="hideMenu()"></i>
+				<ul class="nav__ul">
+					<li class="nav__ul__li"><a class="nav__a" href="index.html">HOME</a></li>
+					<li class="nav__ul__li"><a class="nav__a" href="trayectoria.html">TRAYECTORIA</a></li>
+					<li class="nav__ul__li"><a class="nav__a" href="discografia.html">DISCOGRAFÍA</a></li>
+					<li class="nav__ul__li"><a class="nav__a" href="contactame.html">CONTÁCTAME</a></li>
+					<li class="nav__ul__li"><a class="nav__a" href="kitDePrensa.html">KIT DE PRENSA</a></li>
+				</ul>
+			</div>
+			<i class="fas fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+	<!--Álbumes-->
+
+		<div class="evolution">
+			<div class="row">
+				<div class="evolution__albumColumn">
+					<img class="evolution__img" src="imagenes/covers/coverEvolution.jpg">
+				</div>
+			</div>
+		</div>
+
+		<!--Canciones-->
+
+		<div class="listEvolution">
+			<ul class="listEvolution__ul">
+				<li class="listEvolution__ul__li">
+					<span class="number">1</span>
+					<span class="Name">Por Mí Está Bien</span>
+					<span class="Time">3:56</span>
+				</li>
+				<li class="listEvolution__ul__li">
+					<span class="number">2</span>
+					<span class="Name">Llégate</span>
+					<span class="Time">3:33</span>
+				</li>
+				<li class="listEvolution__ul__li">
+					<span class="number">3</span>
+					<span class="Name">Por Si Hoy No Se Da</span>
+					<span class="Time">3:10</span>
+				</li>
+				<li class="listEvolution__ul__li">
+					<span class="number">4</span>
+					<span class="Name">Cayendo la Luna</span>
+					<span class="Time">3:13</span>
+				</li>
+				<li class="listEvolution__ul__li">
+					<span class="number">5</span>
+					<span class="Name">Entiéndeme</span>
+					<span class="Time">4:30</span>
+				</li>
+				<li class="listEvolution__ul__li">
+					<span class="number">6</span>
+					<span class="Name">Me Enamoré</span>
+					<span class="Time">4:01</span>
+				</li>
+				<li class="listEvolution__ul__li">
+					<span class="number">7</span>
+					<span class="Name">Cuando Le Conviene <img src="https://i.stack.imgur.com/tkB9m.png" alt="explicit small"></span>
+					<span class="Time">4:14</span>
+				</li>
+				<li class="listEvolution__ul__li">
+					<span class="number">8</span>
+					<span class="Name">Si Te Quedas Con Él</span>
+					<span class="Time">3:20</span>
+				</li>
+				<li class="listEvolution__ul__li">
+					<span class="number">9</span>
+					<span class="Name">Si Tú Lo Quieres</span>
+					<span class="Time">3:33</span>
+				</li>
+				<li class="listEvolution__ul__li">
+					<span class="number">10</span>
+					<span class="Name">No Me Enamoro</span>
+					<span class="Time">3:41</span>
+				</li>
+
+	</section>
+	
+	<!--JavaScript-->
+
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/6bf566be2c.js" crossorigin="anonymous"></script>
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+</body>
+</html>

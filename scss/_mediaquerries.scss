@@ -1,0 +1,159 @@
+@import "vars";
+
+/*header*/
+@media all and (max-width: 700px){
+    .nav__icon__img{
+        display: none;
+    }
+}
+
+/*home*/
+@media all and (max-width: 700px){
+    .textBox__titulo{
+        font-size: 1em;
+    }
+    .nav__links{
+        position: absolute;
+        height: 100vh;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+        .nav__ul{
+            padding: 10px;
+            .nav__ul li{
+                display: inline-block;
+            }
+        }
+    }
+}
+
+/*biography*/
+@media all and (max-width: 700px){
+	.biography{
+	    text-align: left;
+        .biography__row{
+            flex-direction: column;
+            .biography__column{
+                .biography__img{
+                    width: 300px;
+                }
+            }
+        }
+	}
+}
+
+/*call to action*/
+@media all and (max-width: 700px){
+	.cta__titulo{
+		font-size: 1.25em;
+	}
+}
+
+/*contact*/
+@media all and (max-width:700px){
+	.contact__container{
+        flex-direction: column;
+        align-items: center;
+        height: 530px;
+        .contact__message , textarea{
+            height: 200px;
+        }
+        .contact__input-field , .contact__message{
+            width: 100%;
+        }
+        .contact__button{
+			margin-left: 110px;
+		}
+    }
+}
+
+/*discography*/
+@media all and (max-width: 700px){
+	.discography{
+        font-size: 1em;
+        .discography__img{
+        margin-left: 20px;
+        flex-direction: row;
+        width: 250px;
+        }
+	}
+}
+
+/*evolution*/
+@media all and (max-width: 700px){
+    .evolution{
+        margin-left: 100px;
+        margin-top: 30px;
+        width: 500px;
+        .evolution__albumColumn{
+            margin-top: 20px;
+        }
+    }
+    .listEvolution{
+        margin-top: 250px;
+        width: 315px;
+        right: 30px;
+        height: 400px;
+        overflow-y: scroll;
+	&::-webkit-scrollbar{
+		width: 12px;
+		background: $black;
+	}
+	&::-webkit-scrollbar-thumb{
+		background: $green;
+	}
+        .listEvolution__ul{
+            width: 300px;
+        }
+    }
+}
+
+/*diferente*/
+@media all and (max-width: 700px){
+    .diferente{
+        margin-left: 100px;
+        margin-top: 30px;
+        width: 500px;
+        .diferente__img{
+            margin-top: 20px;
+        }
+    }
+    .listDiferente{
+        margin-top: 200px;
+        width: 315px;
+        right: 30px;
+        height: 375px;
+        overflow-y: scroll;
+	&::-webkit-scrollbar{
+		width: 12px;
+		background: $black;
+	}
+	&::-webkit-scrollbar-thumb{
+		background: $green;
+	}
+        .listDiferente__ul{
+            width: 300px;
+        }
+    }
+}
+
+/*recordando*/
+@media all and (max-width: 700px){
+    .recordando{
+        margin-left: 100px;
+        margin-top: 30px;
+        width: 500px;
+        .recordando__img{
+            margin-top: 20px;
+        }
+    }
+    .listRecordando{
+        margin-top: 250px;
+        width: 320px;
+        right: 30px;
+        height: 420px;
+        .listRecordando__ul{
+            width: 300px;
+        }
+    }
+}

@@ -1,0 +1,417 @@
+@import "general";
+@import "vars";
+@import "fonts";
+@import "header";
+@import "mixins";
+
+@each $nombre, $valor in $maps{
+	.type-#{$nombre}{
+		font-weight: $valor;
+	}
+}
+
+/*HOME****************************************************************************************************************/
+
+body{
+	&::-webkit-scrollbar{
+		width: 16px;
+		background: $black;
+	}
+	&::-webkit-scrollbar-thumb{
+		background: $green;
+	}
+	.textBox{
+		width: 90%;
+		color: $white;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		.textBox__titulo{
+			font-size: 4em;
+			font-weight: $semi-bold-weight;
+		}
+		.textBox__parrafo{
+			margin: 10px 0 40px;
+			font-size: 1.5em;
+			color: $white;
+		}
+	}
+	nav .fa{
+		display: none;
+	}
+}
+
+/*HOME****************************************************************************************************************/
+/*BIOGRAFÍA***********************************************************************************************************/
+
+.biography{
+	min-height: 100vh;
+	width: 80%;
+	margin: auto;
+	text-align: left;
+	padding-top: 50px;
+	.biography__titlulo{
+		text-align: center;
+		font-size: 3em;
+		font-weight: $semi-bold-weight;
+		color: $black;
+	}
+	.biography__row{
+		margin-top: 5%;
+		display: flex;
+		justify-content: space-between;
+		.biography__column{
+			flex-basis: 31%;
+			/*background: #fff3f3;*/
+			border-radius: 10px;
+			margin-bottom: 5%;
+			padding: 20px 12px;
+			box-sizing: border-box;
+			.biography__img{
+				border-radius: 10px;
+				width: 400px;
+			}
+			.biography__nombre{
+				font-size: 2.5em;
+				font-weight: $semi-bold-weight;
+				margin: 10px 0;
+			}
+		}
+	}
+}
+.page-divider{
+	border-top: 2px solid $black;
+	border-radius: 50%;
+	width: 100%;
+}
+
+/*BIOGRAFÍA***********************************************************************************************************/
+/*GALERÍA*************************************************************************************************************/
+
+.gallery{
+	min-height: 50vh;
+	width: 80%;
+	margin: auto;
+	text-align: left;
+	padding-top: 50px;
+	.gallery__titulo{
+		text-align: center;
+		font-size: 3em;
+		font-weight: $semi-bold-weight;
+		color: $black;
+		margin-bottom: 30px;
+	}
+}
+
+/*GALERÍA*************************************************************************************************************/
+/*LLAMADO A LA ACCIÓN*************************************************************************************************/
+
+.cta{
+	margin: 100px auto;
+	width: 80%;
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../imagenes/fotos/CallToAction.png);
+	background-position: top;
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+	padding: 100px 0;
+	.cta__titulo{
+		color: $white;
+		font-weight: $medium-weight;
+		margin-bottom: 40px;
+		padding: 0;
+	}
+	.cta__button{
+		@include botones;
+	}
+}
+
+/*LLAMADO A LA ACCIÓN*************************************************************************************************/
+/*DISCOGRAFIA*********************************************************************************************************/
+
+.discography{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 25px;
+	.discography__titulo{
+		margin-top: 40px;
+		font-size: 3em;
+		font-weight: $semi-bold-weight;
+		color: $white;
+	}
+}
+.discography__Column{
+	flex-basis: 30%;
+	border-radius: 10px;
+	margin: 10px 15px;
+	position: relative;
+	box-sizing: border-box;
+	.discography__img{
+		width: 100%;
+		margin-top: 20px;
+		display: inline-block;
+		border-radius: 10px;
+		position: relative;
+		align-items: center;
+		transition: 1s;
+		cursor: pointer;
+		&:hover{
+			transform: scale(1.05);
+			box-shadow: 4px 4px 4px 1px rgba(250,250,250,0.2);
+		}
+	}
+}
+
+/*DISCOGRAFIA*********************************************************************************************************/
+/*CONTACTAME**********************************************************************************************************/
+
+.contact{
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	padding: 0 20px;
+	.contact__titulo{
+		color: $white;
+		text-align: center;
+		font-weight: $medium-weight;
+		font-size: 3rem;
+	}
+	.contact__container{
+		max-width: 1100px;
+		margin: 0 auto;
+		background: rgba(0,0,0,0.8);
+		padding: 30px;
+		border-radius: 5px;
+		display: flex;
+		box-shadow: 0 0 10px rgba(0,0,0,0.13);
+		.contact__input-fields{
+			display: flex;
+			flex-direction: column;
+			margin-right: 4%;
+		}
+		.contact__input-fields , .contact__message{
+			width: 80%;
+		}
+		.input , textarea{
+			margin: 10px 0;
+			background: transparent;
+			border: 0;
+			border-bottom: 2px solid #01893f;
+			padding: 10px;
+			color: $white;
+			width: 100%;
+		}
+		textarea{
+			height: 178px;
+		}
+		.contact__button{
+			@include botones;
+		}
+	}
+}
+
+/*CONTACTAME**********************************************************************************************************/
+/*DIFERENTE ALBUM*****************************************************************************************************/
+
+.diferente{
+	width: 80%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	box-sizing: border-box;
+	margin: auto;
+	text-align: center;
+	.diferente__albumColumn{
+		flex-basis: 40%;
+		border-radius: 10px;
+		margin-bottom: 30px;
+		position: relative;
+		.diferente__img{
+			width: 100%;
+			display: block;
+			border-radius: 10px;
+			position: relative;
+		}
+	}
+}
+.listDiferente{
+	position: absolute;
+	top: 150px;
+	right: 160px;
+	box-sizing: border-box;
+	margin: auto;
+	.listDiferente__ul{
+		position: relative;
+		width: 500px;
+		padding: 5px;
+		box-sizing: border-box;
+		.listDiferente__ul__li{
+			display: flex;
+			background: rgba(255,255,255,.1);
+			padding: 10px 20px;
+			color: $white;
+			margin: 5px 0;
+			transition: .5s;
+			cursor: pointer;
+			&:hover{
+				transform: scale(1.06);
+				background: $green;
+			}
+		}
+		span{
+			&:nth-child(1){
+				width: 80px;
+			}
+			&:nth-child(2){
+				width: 500px;
+			}
+			&:nth-child(3){
+				width: 30px;
+			}
+		}
+	}
+}
+
+/*DIFERENTE ALBUM*****************************************************************************************************/
+/*EVOLUTION ALBUM*****************************************************************************************************/
+
+.evolution{
+	width: 80%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	box-sizing: border-box;
+	margin: auto;
+	text-align: center;
+	.evolution__albumColumn{
+		flex-basis: 40%;
+		border-radius: 10px;
+		margin-bottom: 30px;
+		position: relative;
+		.evolution__img{
+			width: 100%;
+			display: inline-block;
+			border-radius: 10px;
+			position: relative;
+		}
+	}
+}
+.listEvolution{
+	position: absolute;
+	top: 115px;
+	right: 160px;
+	box-sizing: border-box;
+	margin: auto;
+	.listEvolution__ul{
+		position: relative;
+		width: 500px;
+		padding: 5px;
+		box-sizing: border-box;
+		.listEvolution__ul__li{
+			display: flex;
+			background: rgba(255,255,255,.1);
+			padding: 10px 20px;
+			color: $white;
+			margin: 5px 0;
+			transition: .5s;
+			cursor: pointer;
+			&:hover{
+				transform: scale(1.06);
+				background: #01893f;
+			}
+		}
+		span{
+			&:nth-child(1){
+				width: 80px;
+			}
+			&:nth-child(2){
+				width: 500px;
+			}
+			&:nth-child(3){
+				width: 30px;
+			}
+		}
+	}
+}
+
+/*EVOLUTION ALBUM*****************************************************************************************************/
+/*RECORDANDO ALBUM****************************************************************************************************/
+
+.recordando{
+	width: 80%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	box-sizing: border-box;
+	margin: auto;
+	text-align: center;
+	.recordando__albumColumn{
+		flex-basis: 40%;
+		border-radius: 10px;
+		margin-bottom: 30px;
+		position: relative;
+		.recordando__img{
+			width: 100%;
+			display: block;
+			border-radius: 10px;
+			position: relative;
+		}
+	}
+}
+.listRecordando{
+	position: absolute;
+	top: 110px;
+	right: 160px;
+	box-sizing: border-box;
+	margin: auto;
+	height: 500px;
+	width: 530px;
+	overflow-y: scroll;
+	&::-webkit-scrollbar{
+		width: 12px;
+		background: $black;
+	}
+	&::-webkit-scrollbar-thumb{
+		background: $green;
+	}
+	.listRecordando__ul{
+		position: relative;
+		width: 500px;
+		padding: 5px;
+		box-sizing: border-box;
+		.listRecordando__ul__li{
+			display: flex;
+			background: rgba(255,255,255,.1);
+			padding: 10px 20px;
+			color: $white;
+			margin: 5px 0;
+			transition: .5s;
+			cursor: pointer;
+			&:hover{
+				transform: scale(1.06);
+				background: $green;
+			}
+		}
+		span{
+			&:nth-child(1){
+				width: 80px;
+			}
+			&:nth-child(2){
+				width: 500px;
+			}
+			&:nth-child(3){
+				width: 30px;
+			}
+		}
+	}
+}
+/*RECORDANDO ALBUM****************************************************************************************************/
+
+@import "footer";
+@import "mediaquerries";
+@import "ciclos";

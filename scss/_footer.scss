@@ -1,0 +1,173 @@
+@import "vars";
+@import "fonts";
+
+/*FOOTER**************************************************************************************************************/
+.footer{
+	position: static;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: $black;
+	height: auto;
+	width: 100%;
+	padding-top: 5px;
+	color: $white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	.footer__titulo{
+		font-size: 1.8em;
+		text-align: center;
+		text-transform: capitalize;
+		margin-top: 20px;
+	}
+	.footer__parrafo{
+		max-width: 500px;
+		margin: 10px auto;
+		line-height: 28px;
+		font-size: 1em;
+	}
+	.footer__bottom{
+		background: #111;
+		width: 100%;
+		padding: 10px 0;
+		text-align: center;
+		.footer__parrafo2{
+			font-size: 1em;
+			word-spacing: 2px;
+			text-transform: capitalize;
+			.footer__span{
+				text-transform: uppercase;
+				opacity: .4;
+				font-weight: $extra-light-weight;
+			}
+		}
+	}
+	.footer__titulo--nueva{
+		@extend .footer__titulo;
+		font-weight: $semi-bold-weight;
+	}
+	.footer__icons .fa{
+		text-align: center;;
+		color: $white;
+		margin: 10px;
+		cursor: pointer;
+		padding: 20px 0;
+		&.fa-twitter:hover{
+			color: $black;
+			border-radius: 5px;
+			background-color: #55acee;
+			width: 60px;
+	    	height: 70px;
+	    	margin: 10px 10px;
+			transition: 0.3s linear;
+		}
+		&.fa-instagram:hover{
+			color: $black;
+			border-radius: 5px;
+			background-color: #e4405f;
+			width: 60px;
+		    height: 70px;
+		    margin: 10px 10px;
+			transition: 0.3s linear;
+		}
+		&.fa-spotify:hover{
+			color: $black;
+			border-radius: 5px;
+			background-color: #00e461;
+			width: 60px;
+		   	height: 70px;
+		   	margin: 10px 10px;
+			transition: 0.3s linear;
+		}
+		&.fa-youtube-play:hover{
+			color: $black;
+			border-radius: 5px;
+			background-color: #bb0000;
+			width: 60px;
+		   	height: 70px;
+		   	margin: 10px 10px;
+			transition: 0.3s linear;
+		}
+	}
+}
+/*FOOTER**************************************************************************************************************/
+/*FOOTER--SMALL**************************************************************************************************************/
+
+.footer--small{
+	position: static;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: $black;
+	height: auto;
+	width: 100%;
+	padding-top: 5px;
+	color: $white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	.footer--small__bottom{
+		background: #111;
+		width: 100%;
+		padding: 10px 0;
+		text-align: center;
+		.footer--small__parrafo2{
+			font-size: 1em;
+			word-spacing: 2px;
+			text-transform: capitalize;
+			.footer--small__span{
+			text-transform: uppercase;
+				opacity: .4;
+				font-weight: $extra-light-weight;
+			}
+		}
+	}
+	.footer--small__icons .fa{
+		color: $white;
+		margin: 10px 10px;
+		cursor: pointer;
+		padding: 20px 0;
+		&.fa-twitter:hover{
+			color: $black;
+			border-radius: 5px;
+			background-color: #55acee;
+			width: 60px;
+	    	height: 70px;
+	    	margin: 10px 10px;
+			transition: 0.3s linear;
+		}
+		&.fa-instagram:hover{
+			color: $black;
+			border-radius: 5px;
+			background-color: #e4405f;
+			width: 60px;
+		    height: 70px;
+		    margin: 10px 10px;
+			transition: 0.3s linear;
+		}
+		&.fa-spotify:hover{
+			color: $black;
+			border-radius: 5px;
+			background-color: #00e461;
+			width: 60px;
+		   	height: 70px;
+		   	margin: 10px 10px;
+			transition: 0.3s linear;
+		}
+		&.fa-youtube-play:hover{
+			color: $black;
+			border-radius: 5px;
+			background-color: #bb0000;
+			width: 60px;
+		   	height: 70px;
+		   	margin: 10px 10px;
+			transition: 0.3s linear;
+		}
+	}
+}
+/*FOOTER--SMALL**************************************************************************************************************/
