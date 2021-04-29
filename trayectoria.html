@@ -17,18 +17,36 @@
 <body>
 	<section class="header">
 		<nav class="nav">
-			<a href="index.html"><img class="nav__img" src="imagenes/logos/logoBlancoT.svg" alt="Logo"></a>
+			<a href="index.html"><img class="nav__img" src="imagenes/logos/logo.png" alt="Logo"></a>
 			<div class="nav__links" id="navLinks">
-				<i class="fas fa-times" onclick="hideMenu()"></i>
 				<ul class="nav__ul">
-					<li class="nav__ul__li"><a class="nav__a" href="index.html">HOME</a></li>
-					<li class="nav__ul__li"><a class="nav__a" href="trayectoria.html">TRAYECTORIA</a></li>
-					<li class="nav__ul__li"><a class="nav__a" href="discografia.html">DISCOGRAFÍA</a></li>
-					<li class="nav__ul__li"><a class="nav__a" href="contactame.html">CONTÁCTAME</a></li>
-					<li class="nav__ul__li"><a class="nav__a" href="kitDePrensa.html">KIT DE PRENSA</a></li>
+					<li class="nav__li"><a class="nav__a" href="index.html">HOME</a></li>
+					<li class="nav__li"><a class="nav__a" href="trayectoria.html">TRAYECTORIA</a></li>
+					<li class="nav__li"><a class="nav__a" href="discografia.html">DISCOGRAFÍA</a></li>
+					<li class="nav__li"><a class="nav__a" href="contactame.html">CONTÁCTAME</a></li>
+					<li class="nav__li"><a class="nav__a" href="kitDePrensa.html">KIT DE PRENSA</a></li>
 				</ul>
 			</div>
-			<i class="fas fa-bars" onclick="showMenu()"></i>
+			<div class="nav__burgr">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<div class="nav__sidebar" id="side" onclick="myClick">
+				<div class="side-cont">
+					<i class="lni lni-close"></i>
+					<div class="upper"></div>
+					<div class="links">
+						<ul class="sideLinks">
+							<li><a href="index.html"><i class="lni lni-home"></i>HOME</a></li>
+							<li><a href="trayectoria.html"><i class="lni lni-direction"></i>TRAYECTORIA</a></li>
+							<li><a href="discografia.html"><i class="lni lni-music"></i>DISCOGRAFÍA</a></li>
+							<li><a href="contactame.html"><i class="lni lni-user"></i>CONTÁCTAME</a></li>
+							<li><a href="kitDePrensa.html"><i class="lni lni-pencil"></i>KIT DE PRENSA</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</nav>
 	</section>
 	<!--Footer-->
@@ -49,14 +67,18 @@
 	<script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 	<script src="https://kit.fontawesome.com/6bf566be2c.js" crossorigin="anonymous"></script>
-	<script>
-		var navLinks = document.getElementById("navLinks");
-		function showMenu(){
-			navLinks.style.right = "0";
-		}
-		function hideMenu(){
-			navLinks.style.right = "-200px";
-		}
+	<script type="text/javascript">
+		document.querySelector('.burgr')
+		.addEventListener('click', () =>{
+			document.getElementById("side").style.right = "0"
+
+		});
+
+		document.querySelector('.lni-close')
+		.addEventListener('click', () =>{
+			document.getElementById("side").style.right = "-300px"
+
+		});
 	</script>
 </body>
 </html>

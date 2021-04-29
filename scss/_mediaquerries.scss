@@ -1,14 +1,21 @@
 @import "vars";
 
 /*header*/
-@media all and (max-width: 700px){
-    .nav__icon__img{
-        display: none;
+@media all and (max-width: 847px){
+    .header{
+        .nav{
+            .nav__ul{
+                display: none;
+            }
+            .nav__burgr{
+                display: block;
+            }
+        }
     }
 }
 
 /*home*/
-@media all and (max-width: 700px){
+@media all and (max-width: 847px){
     .textBox__titulo{
         font-size: 1em;
     }
@@ -28,7 +35,7 @@
 }
 
 /*biography*/
-@media all and (max-width: 700px){
+@media all and (max-width: 847px){
 	.biography{
 	    text-align: left;
         .biography__row{
@@ -43,32 +50,39 @@
 }
 
 /*call to action*/
-@media all and (max-width: 700px){
+@media all and (max-width: 847px){
 	.cta__titulo{
 		font-size: 1.25em;
 	}
 }
 
 /*contact*/
-@media all and (max-width:700px){
-	.contact__container{
-        flex-direction: column;
-        align-items: center;
-        height: 530px;
-        .contact__message , textarea{
-            height: 200px;
+@media all and (max-width:847px){
+    .contact{
+        .contact__titulo{
+        font-size: 2rem;
         }
-        .contact__input-field , .contact__message{
-            width: 100%;
+        .contact__container{
+            flex-direction: column;
+            align-items: center;
+            padding-top: 0;
+            height: 400px;
+            textarea{
+                height: 100px;
+            }
+            .contact__input-fields , .contact__message{
+                width: 100%;
+            }
+            .contact__button{
+                margin-left: 70px;
+            }
         }
-        .contact__button{
-			margin-left: 110px;
-		}
     }
+    
 }
 
 /*discography*/
-@media all and (max-width: 700px){
+@media all and (max-width: 847px){
 	.discography{
         font-size: 1em;
         .discography__img{
@@ -80,7 +94,7 @@
 }
 
 /*evolution*/
-@media all and (max-width: 700px){
+@media all and (max-width: 847px){
     .evolution{
         margin-left: 100px;
         margin-top: 30px;
@@ -109,7 +123,7 @@
 }
 
 /*diferente*/
-@media all and (max-width: 700px){
+@media all and (max-width: 847px){
     .diferente{
         margin-left: 100px;
         margin-top: 30px;
@@ -138,7 +152,7 @@
 }
 
 /*recordando*/
-@media all and (max-width: 700px){
+@media all and (max-width: 847px){
     .recordando{
         margin-left: 100px;
         margin-top: 30px;

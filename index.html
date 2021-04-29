@@ -11,21 +11,42 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
 	<link rel="stylesheet" href="scss/main.css">
 	<title>Trebol Nite | Sitio Oficial</title>
 </head>
 <body>
 	<section class="header">
 		<nav class="nav">
-			<a href="index.html"><img class="nav__img" src="imagenes/logos/logoBlancoT.svg" alt="Logo"></a>
+			<a href="index.html"><img class="nav__img" src="imagenes/logos/logo.png" alt="Logo"></a>
 			<div class="nav__links" id="navLinks">
 				<ul class="nav__ul">
-					<li class="nav__ul__li"><a class="nav__a" href="index.html">HOME</a></li>
-					<li class="nav__ul__li"><a class="nav__a" href="trayectoria.html">TRAYECTORIA</a></li>
-					<li class="nav__ul__li"><a class="nav__a" href="discografia.html">DISCOGRAFÍA</a></li>
-					<li class="nav__ul__li"><a class="nav__a" href="contactame.html">CONTÁCTAME</a></li>
-					<li class="nav__ul__li"><a class="nav__a" href="kitDePrensa.html">KIT DE PRENSA</a></li>
+					<li class="nav__li"><a class="nav__a" href="index.html">HOME</a></li>
+					<li class="nav__li"><a class="nav__a" href="trayectoria.html">TRAYECTORIA</a></li>
+					<li class="nav__li"><a class="nav__a" href="discografia.html">DISCOGRAFÍA</a></li>
+					<li class="nav__li"><a class="nav__a" href="contactame.html">CONTÁCTAME</a></li>
+					<li class="nav__li"><a class="nav__a" href="kitDePrensa.html">KIT DE PRENSA</a></li>
 				</ul>
+			</div>
+			<div class="nav__burgr">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<div class="nav__sidebar" id="side" onclick="myClick">
+				<div class="side-cont">
+					<i class="lni lni-close"></i>
+					<div class="upper"></div>
+					<div class="links">
+						<ul class="sideLinks">
+							<li><a href="index.html"><i class="lni lni-home"></i>HOME</a></li>
+							<li><a href="trayectoria.html"><i class="lni lni-direction"></i>TRAYECTORIA</a></li>
+							<li><a href="discografia.html"><i class="lni lni-music"></i>DISCOGRAFÍA</a></li>
+							<li><a href="contactame.html"><i class="lni lni-user"></i>CONTÁCTAME</a></li>
+							<li><a href="kitDePrensa.html"><i class="lni lni-pencil"></i>KIT DE PRENSA</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div class="nav__icon scrollTop" onclick="scrollToTop()">
 				<img src="imagenes/trevol-icono.png" class="nav__icon__img">
@@ -49,7 +70,7 @@
 				<p class="biography__parrafo">Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Inventore quia saepe asperiores porro magnam expedita dolorem non culpa odio, tempora quo, ipsum architecto, distinctio sapiente nisi autem molestias, sint sequi. Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Aspernatur natus voluptate sunt, autem, possimus mollitia laudantium iste vitae ab, officiis rem saepe aperiam qui tempore ex magnam molestiae minus necessitatibus. Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Tempora doloremque nostrum quo mollitia rem numquam quibusdam est dolor libero officia debitis dolores, consequuntur, ea exercitationem accusantium ex, dicta obcaecati, perferendis?</p>
 			</div>
 			<div class="biography__column">
-				<img class="biography__img" src="imagenes/fotos/DSC_0339.JPG">
+				<img class="biography__img" src="imagenes/fotos/DSC_0339.jpg">
 			</div>
 		</div>
 		<div class="page-divider"></div>
@@ -62,16 +83,34 @@
 		<div id="carouselExampleControls" class="carousel slide col-md-5 container" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-		    	<img class="d-block w-100" src="imagenes/fotos/DSC_0346.JPG" alt="First slide">
+		    	<img class="d-block w-100" src="imagenes/fotos/DSC_0346.jpg" alt="First slide">
 		  	</div>
 		  	<div class="carousel-item">
-		    	<img class="d-block w-100" src="imagenes/fotos/DSC_0702.JPG" alt="Second slide">
+		    	<img class="d-block w-100" src="imagenes/fotos/DSC_0702.jpg" alt="Second slide">
 		  	</div>
 		  	<div class="carousel-item">
-		    	<img class="d-block w-100" src="imagenes/fotos/DSC_0539.JPG" alt="Third slide">
+		    	<img class="d-block w-100" src="imagenes/fotos/DSC_0539.jpg" alt="Third slide">
 		  	</div>
 		  	<div class="carousel-item">
-		    	<img class="d-block w-100" src="imagenes/fotos/DSC_0389.JPG" alt="four slide">
+		    	<img class="d-block w-100" src="imagenes/fotos/DSC_0646.jpg" alt="fourth slide">
+		  	</div>
+			  <div class="carousel-item">
+		    	<img class="d-block w-100" src="imagenes/fotos/DSC_0389.jpg" alt="fifth slide">
+		  	</div>
+			  <div class="carousel-item">
+		    	<img class="d-block w-100" src="imagenes/fotos/DSC_0686.jpg" alt="sixth slide">
+		  	</div>
+			  <div class="carousel-item">
+		    	<img class="d-block w-100" src="imagenes/fotos/DSC_0365.jpg" alt="seventh slide">
+		  	</div>
+			  <div class="carousel-item">
+		    	<img class="d-block w-100" src="imagenes/fotos/DSC_0706.jpg" alt="eighth slide">
+		  	</div>
+			  <div class="carousel-item">
+		    	<img class="d-block w-100" src="imagenes/fotos/DSC_0514.jpg" alt="nineth slide">
+		  	</div>
+			  <div class="carousel-item">
+		    	<img class="d-block w-100" src="imagenes/fotos/DSC_0712.jpg" alt="tenth slide">
 		  	</div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -118,28 +157,18 @@
 	<script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 	<script src="https://kit.fontawesome.com/6bf566be2c.js" crossorigin="anonymous"></script>
-	<script>
-		var navLinks = document.getElementById("navLinks");
-		function showMenu(){
-			navLinks.style.right = "0";
-		}
-		function hideMenu(){
-			navLinks.style.right = "-200px";
-		}
-	</script>
-
 	<script type="text/javascript">
-		window.addEvenListener('scroll', function(){
-			var scroll = document.querySelector('.scrollTop');
-			scroll.classlist.toggle("active" , window.scrollY > 500)
-		})
+		document.querySelector('.burgr')
+		.addEventListener('click', () =>{
+			document.getElementById("side").style.right = "0"
 
-		function scrollToTop(){
-			window-scrollTo({
-				top: 0,
-				behavior: "smooth"
-			})
-		}
+		});
+
+		document.querySelector('.lni-close')
+		.addEventListener('click', () =>{
+			document.getElementById("side").style.right = "-300px"
+
+		});
 	</script>
 </body>
 </html>
