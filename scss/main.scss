@@ -28,6 +28,7 @@ body{
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
+		z-index: 0;
 		.textBox__titulo{
 			font-size: 4em;
 			font-weight: $semi-bold-weight;
@@ -64,7 +65,6 @@ body{
 		justify-content: space-between;
 		.biography__column{
 			flex-basis: 31%;
-			/*background: #fff3f3;*/
 			border-radius: 10px;
 			margin-bottom: 5%;
 			padding: 20px 12px;
@@ -169,6 +169,7 @@ body{
 /*CONTACTAME**********************************************************************************************************/
 
 .contact{
+	margin-top: 40px;
 	box-sizing: border-box;
 	position: absolute;
 	top: 50%;
@@ -208,6 +209,14 @@ body{
 		}
 		textarea{
 			height: 178px;
+			resize: none;
+			&::-webkit-scrollbar{
+				width: 12px;
+				background: $black;
+			}
+			&::-webkit-scrollbar-thumb{
+				background: $green;
+			}
 		}
 		.contact__button{
 			@include botones;
@@ -241,7 +250,7 @@ body{
 }
 .listDiferente{
 	position: absolute;
-	top: 150px;
+	top: 220px;
 	right: 160px;
 	box-sizing: border-box;
 	margin: auto;
@@ -303,7 +312,7 @@ body{
 }
 .listEvolution{
 	position: absolute;
-	top: 115px;
+	top: 200px;
 	right: 160px;
 	box-sizing: border-box;
 	margin: auto;
@@ -365,7 +374,7 @@ body{
 }
 .listRecordando{
 	position: absolute;
-	top: 110px;
+	top: 200px;
 	right: 160px;
 	box-sizing: border-box;
 	margin: auto;

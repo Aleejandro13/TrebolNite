@@ -3,142 +3,73 @@
 .header{
 	min-height: 100vh;
 	width: 100%;
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../imagenes/fotos/DSC_0402.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../imagenes/fotos/DSC_0402.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	display: flex;
 	flex-direction: column;
 	nav{
-		width: 90%;
-		height: 60px;
-		display: flex;
-		margin: 10px auto;
 		justify-content: space-between;
-		.nav__img{
-			width: 60px;
+		.logo{
+		width: 60px;
+		position: block;
+		margin-left: 20px;
+		}
+		.button-menu{
+			display: inline-block;
 			margin-top: 20px;
+			margin-left: 190px;
 		}
-		.nav__icon{
+		.menu-nav{
 			position: fixed;
-			width: 50px;
-			height: 20px;
-			bottom: 20px;
-			right: 20px;
-			z-index: 1;
-			.nav__icon__img{
-				position: fixed;
-				width: 70px;
-				height: 70px;
-				bottom: 30px;
-				right: 30px;
-				background: transparent;
-				cursor: pointer;
-				z-index: 50;
-			}
-		}
-		.nav__ul{
-			display: flex;
-			margin: 20px 0;
-			flex: 1;
-			text-align: center;
-			.nav__li{
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 360px;
+			background-color: $black;
+			padding: 1rem 2rem;
+			transform: translateX(720px);
+			transition: transform .3s;
+			.menu-nav__ul{
 				list-style: none;
-				display: inline-block;
-				padding: 20px 12px;
-				position: relative;
-				.nav__a{
-					font-size: 1.2rem;
-					color: $white;
-					text-decoration: none;
-					white-space: nowrap;
-					&::after{
-						content: '';
-						width: 0%;
-						height: 2px;
-						background: $green;
-						display: block;
-						margin: auto;
-						transition: 0.5s;
-					}
-					&:hover::after{
-							width: 100%;
+				text-align: center;
+				margin-top: 160px;
+				.menu-nav__li{
+					display: block;
+					margin-bottom: 1rem;
+					font-size: 2rem;
+					padding: 2px 5px;
+					.menu-nav__a{
+						color: $white;
+						font-weight: $medium-weight;
+						text-decoration: none;
 					}
 				}
 			}
 		}
-		.nav__burgr{
-			cursor:pointer;
-			padding-top: 5px;
-			margin: auto 0;
-			margin-left: auto;
-			display: none;
-			.line{
-				width: 25px;
-				height: 6px;
-				background: $green;
-				margin: 3.5px 0;
-			}
+		.menu-nav.visible{
+			transform: translateX(0);
+			z-index: 5;
 		}
-	}
-	.nav__sidebar{
-		width: 300px;
-		height: 100%;
-		position: fixed;
-		z-index: 2;
-		right: -300px;
-		top: 0;
-		background-color: $black;
-		border-top-left-radius: 10px;
-		border-bottom-left-radius: 10px;
-		transition: right ease .4s;
-		.side-cont{
-			margin:25px;
-			.lni-close{
-				margin-right: auto;
-				margin-bottom: 20px;
-				padding: 5px;
-				border-radius: 5px;
-				color: $white;
-				font-size: 30px;
-				transition: background-color ease .4s, color ease .4s;
-				&:hover{
-					cursor: pointer;
-					background-color: #01893f;
-					color: $white;
-				}
-			}
-			.upper{
-				display: flex;
-				margin-bottom: 80px;
-			}
-			.links{
-				margin: auto;
-				display: flex;
-				justify-content: center;
-				.sideLinks{
-					li{
-						font-size: 1.3rem;
-						list-style: none;
-						margin-bottom: 20px;
-						padding: 10px 20px;
-						transition: background-color ease .4s, color ease .4s;
-						border-radius: 10px;
-						&:hover{
-							background-color: #01893f{
-							}
-						}
-						a{
-							text-decoration: none;
-							color: $white;
-						}
-						.lni{
-							margin-right: 20px;
-							color: $white;
-						}
-					}
-				}
-			}
+		.mostrar-menu{
+			width: 50px;
+			font-size: 2.5rem;
+			background-color: transparent;
+			color: #01893f;
+			border: 0;
+			cursor: pointer;
+		}
+		.cerrar-menu{
+			background-color: transparent;
+			border: 0;
+			padding: 0;
+			color: #01893f;
+			font-size: 4rem;
+			cursor: pointer;
+			position: absolute;
+			right: 2rem;
+			top: 0;
 		}
 	}
 }

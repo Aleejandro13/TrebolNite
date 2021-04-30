@@ -1,18 +1,94 @@
 @import "vars";
 
-/*header*/
+
 @media all and (max-width: 847px){
     .header{
-        .nav{
-            .nav__ul{
-                display: none;
-            }
-            .nav__burgr{
-                display: block;
-            }
+        .navbar{
+            display: none;
         }
     }
 }
+/*header*/
+@media all and (min-width: 847px){
+    .header{
+        nav{
+            display: none;
+        }
+        .navbar{
+            width: 90%;
+            height: 60px;
+            display: flex;
+            margin: 10px auto;
+            justify-content: space-between;
+            .navbar__img{
+                width: 80px;
+                margin-top: 20px;
+            }
+            .navbar__icon{
+                position: fixed;
+                width: 50px;
+                height: 20px;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1;
+                .navbar__icon__img{
+                    position: fixed;
+                    width: 70px;
+                    height: 70px;
+                    bottom: 30px;
+                    right: 30px;
+                    background: transparent;
+                    cursor: pointer;
+                    z-index: 50;
+                }
+            }
+            .navbar__ul{
+                display: flex;
+                margin: 20px 0;
+                flex: 1;
+                text-align: center;
+                .navbar__li{
+                    list-style: none;
+                    display: inline-block;
+                    padding: 20px 12px;
+                    position: relative;
+                    .navbar__a{
+                        font-size: 1.3rem;
+                        color: $white;
+                        text-decoration: none;
+                        white-space: nowrap;
+                        &::after{
+                            content: '';
+                            width: 0%;
+                            height: 2px;
+                            background: $green;
+                            display: block;
+                            margin: auto;
+                            transition: 0.5s;
+                        }
+                        &:hover::after{
+                                width: 100%;
+                        }
+                    }
+                }
+            }
+            .nav__icon{
+                .nav__icon__img{
+                    position: fixed;
+                    width: 70px;
+                    height: 70px;
+                    bottom: 30px;
+                    right: 30px;
+                    background: transparent;
+                    cursor: pointer;
+                    z-index: 50;
+                }
+            }
+        }
+    }    
+}
+    
+
 
 /*home*/
 @media all and (max-width: 847px){
@@ -42,7 +118,7 @@
             flex-direction: column;
             .biography__column{
                 .biography__img{
-                    width: 300px;
+                    width: 280px;
                 }
             }
         }
@@ -96,18 +172,18 @@
 /*evolution*/
 @media all and (max-width: 847px){
     .evolution{
-        margin-left: 100px;
-        margin-top: 30px;
+        margin-left: 90px;
+        margin-top: 5px;
         width: 500px;
         .evolution__albumColumn{
             margin-top: 20px;
         }
     }
     .listEvolution{
-        margin-top: 250px;
+        margin-top: 130px;
         width: 315px;
         right: 30px;
-        height: 400px;
+        height: 300px;
         overflow-y: scroll;
 	&::-webkit-scrollbar{
 		width: 12px;
@@ -125,18 +201,18 @@
 /*diferente*/
 @media all and (max-width: 847px){
     .diferente{
-        margin-left: 100px;
-        margin-top: 30px;
+        margin-left: 90px;
+        margin-top: 5px;
         width: 500px;
         .diferente__img{
             margin-top: 20px;
         }
     }
     .listDiferente{
-        margin-top: 200px;
+        margin-top: 130px;
         width: 315px;
         right: 30px;
-        height: 375px;
+        height: 275px;
         overflow-y: scroll;
 	&::-webkit-scrollbar{
 		width: 12px;
@@ -154,18 +230,18 @@
 /*recordando*/
 @media all and (max-width: 847px){
     .recordando{
-        margin-left: 100px;
-        margin-top: 30px;
+        margin-left: 90px;
+        margin-top: 5px;
         width: 500px;
         .recordando__img{
             margin-top: 20px;
         }
     }
     .listRecordando{
-        margin-top: 250px;
-        width: 320px;
+        margin-top: 130px;
+        width: 315px;
         right: 30px;
-        height: 420px;
+        height: 300px;
         .listRecordando__ul{
             width: 300px;
         }
