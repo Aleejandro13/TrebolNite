@@ -48,35 +48,42 @@ body{
 /*BIOGRAFÍA***********************************************************************************************************/
 
 .biography{
+	background-color: $black;
 	min-height: 100vh;
-	width: 80%;
+	width: 100%;
 	margin: auto;
 	text-align: left;
 	padding-top: 50px;
 	.biography__titlulo{
 		text-align: center;
-		font-size: 3em;
+		font-size: 4em;
 		font-weight: $semi-bold-weight;
-		color: $black;
+		color: $white;
 	}
 	.biography__row{
-		margin-top: 5%;
+		margin-top: 50px;
 		display: flex;
 		justify-content: space-between;
 		.biography__column{
-			flex-basis: 31%;
+			flex-basis: 40%;
 			border-radius: 10px;
 			margin-bottom: 5%;
+			margin-left: auto;
 			padding: 20px 12px;
 			box-sizing: border-box;
+			color: $white;
+			p{
+				font-size: 1.2rem;
+			}
 			.biography__img{
 				border-radius: 10px;
 				width: 400px;
 			}
 			.biography__nombre{
-				font-size: 2.5em;
+				font-size: 3em;
 				font-weight: $semi-bold-weight;
 				margin: 10px 0;
+				color: $white;
 			}
 		}
 	}
@@ -98,7 +105,7 @@ body{
 	padding-top: 50px;
 	.gallery__titulo{
 		text-align: center;
-		font-size: 3em;
+		font-size: 4em;
 		font-weight: $semi-bold-weight;
 		color: $black;
 		margin-bottom: 30px;
@@ -129,6 +136,32 @@ body{
 }
 
 /*LLAMADO A LA ACCIÓN*************************************************************************************************/
+/*TRAYECTORIA*********************************************************************************************************/
+
+.trajectory{
+	background: rgba(0,0,0,0.4);
+	border-radius: 50px;
+	width: 90%;
+	margin: 50px auto;
+	.trajectory__title{
+		margin-top: 10px;
+		font-size: 3em;
+		text-align: center;
+		font-weight: $semi-bold-weight;
+		color: $white;
+	}
+	.trajectory__paragraph{
+		margin: 15px 80px;
+		font-size: 1.2rem;
+		color: $white;
+		span{
+			font-weight: $semi-bold-weight;
+			font-style: italic;
+		}
+	}
+}
+
+/*TRAYECTORIA*********************************************************************************************************/
 /*DISCOGRAFIA*********************************************************************************************************/
 
 .discography{
@@ -227,30 +260,23 @@ body{
 /*CONTACTAME**********************************************************************************************************/
 /*DIFERENTE ALBUM*****************************************************************************************************/
 
-.diferente{
+.disc{
 	width: 80%;
 	border-radius: 10px;
-	margin-bottom: 30px;
 	position: relative;
 	box-sizing: border-box;
-	margin: auto;
-	text-align: center;
-	.diferente__albumColumn{
-		flex-basis: 40%;
+	margin: 64px 250px;
+	text-align: left;
+	.diferente__img{
+		width: 40%;
+		display: inline-block;
 		border-radius: 10px;
-		margin-bottom: 30px;
 		position: relative;
-		.diferente__img{
-			width: 100%;
-			display: block;
-			border-radius: 10px;
-			position: relative;
-		}
 	}
 }
 .listDiferente{
 	position: absolute;
-	top: 220px;
+	top: 180px;
 	right: 160px;
 	box-sizing: border-box;
 	margin: auto;
@@ -289,30 +315,24 @@ body{
 /*DIFERENTE ALBUM*****************************************************************************************************/
 /*EVOLUTION ALBUM*****************************************************************************************************/
 
-.evolution{
+.disc{
 	width: 80%;
 	border-radius: 10px;
-	margin-bottom: 30px;
 	position: relative;
 	box-sizing: border-box;
-	margin: auto;
-	text-align: center;
-	.evolution__albumColumn{
-		flex-basis: 40%;
+	margin: 64px 250px;
+	text-align: left;
+	.evolution__img{
+		width: 40%;
+		display: inline-block;
 		border-radius: 10px;
-		margin-bottom: 30px;
 		position: relative;
-		.evolution__img{
-			width: 100%;
-			display: inline-block;
-			border-radius: 10px;
-			position: relative;
-		}
 	}
 }
+
 .listEvolution{
 	position: absolute;
-	top: 200px;
+	top: 110px;
 	right: 160px;
 	box-sizing: border-box;
 	margin: auto;
@@ -351,34 +371,27 @@ body{
 /*EVOLUTION ALBUM*****************************************************************************************************/
 /*RECORDANDO ALBUM****************************************************************************************************/
 
-.recordando{
+.disc{
 	width: 80%;
 	border-radius: 10px;
-	margin-bottom: 30px;
 	position: relative;
 	box-sizing: border-box;
-	margin: auto;
-	text-align: center;
-	.recordando__albumColumn{
-		flex-basis: 40%;
+	margin: 64px 250px;
+	text-align: left;
+	.recordando__img{
+		width: 40%;
+		display: inline-block;
 		border-radius: 10px;
-		margin-bottom: 30px;
 		position: relative;
-		.recordando__img{
-			width: 100%;
-			display: block;
-			border-radius: 10px;
-			position: relative;
-		}
 	}
 }
 .listRecordando{
 	position: absolute;
-	top: 200px;
+	top: 140px;
 	right: 160px;
 	box-sizing: border-box;
 	margin: auto;
-	height: 500px;
+	height: 490px;
 	width: 530px;
 	overflow-y: scroll;
 	&::-webkit-scrollbar{
@@ -423,4 +436,3 @@ body{
 
 @import "footer";
 @import "mediaquerries";
-@import "ciclos";

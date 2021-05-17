@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Sitio Oficial de Trebol Nite, donde encontraras imagenes, videos, música y más">
 	<meta name="keyword" content="música, artista, canciones, álbumes, grabaciones, temas, urban Trebol, Trebol Nite, venezuela, rap, letra">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="icon" href="imagenes/logos/Favicon.svg" type="image/svg">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
@@ -25,7 +25,6 @@
 					<li class="navbar__li"><a class="navbar__a" href="trayectoria.html">TRAYECTORIA</a></li>
 					<li class="navbar__li"><a class="navbar__a" href="discografia.html">DISCOGRAFÍA</a></li>
 					<li class="navbar__li"><a class="navbar__a" href="contactame.html">CONTÁCTAME</a></li>
-					<li class="navbar__li"><a class="navbar__a" href="kitDePrensa.html">KIT DE PRENSA</a></li>
 				</ul>
 				<div class="nav__icon scrollTop" onclick="scrollToTop()">
 					<img src="imagenes/trevol-icono.png" class="nav__icon__img">
@@ -45,7 +44,6 @@
 				<li class="menu-nav__li"><a class="menu-nav__a" href="trayectoria.html">TRAYECTORIA</a></li>
 				<li class="menu-nav__li"><a class="menu-nav__a" href="discografia.html">DISCOGRAFÍA</a></li>
 				<li class="menu-nav__li"><a class="menu-nav__a" href="contactame.html">CONTÁCTAME</a></li>
-				<li class="menu-nav__li"><a class="menu-nav__a" href="kitDePrensa.html">KIT DE PRENSA</a></li>
 			</ul>
 			</div>
 		</nav>
@@ -63,8 +61,9 @@
 		<h2 class="biography__titlulo">Biografia</h2>
 		<div class="biography__row">
 			<div class="biography__column">
-				<h3 class="biography__nombre">Gustavo ...</h3>
-				<p class="biography__parrafo">Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Inventore quia saepe asperiores porro magnam expedita dolorem non culpa odio, tempora quo, ipsum architecto, distinctio sapiente nisi autem molestias, sint sequi. Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Aspernatur natus voluptate sunt, autem, possimus mollitia laudantium iste vitae ab, officiis rem saepe aperiam qui tempore ex magnam molestiae minus necessitatibus. Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Tempora doloremque nostrum quo mollitia rem numquam quibusdam est dolor libero officia debitis dolores, consequuntur, ea exercitationem accusantium ex, dicta obcaecati, perferendis?</p>
+				<h3 class="biography__nombre">Gustavo Yanes</h3>
+				<p class="biography__parrafo">Mejor conocido como Trebol Nite, es un cantante, compositor, productor e ingeniero de sonido y productor musical venezolano.</p>
+				<p class="biography__parrafo">A los 15 años grabo su primera canción llamada “Boleto de ida” junto a uno de sus amigos de la infancia. Con 3 álbumes y más de 100 canciones es una promesa en la industria de la música.</p>
 			</div>
 			<div class="biography__column">
 				<img class="biography__img" src="imagenes/fotos/DSC_0339.png">
@@ -122,7 +121,7 @@
 	</section>
 
 	<!--Llamado a la acción-->
-
+	
 	<section class="cta">
 		<h2 class="cta__titulo">Contactame Para Más información</h2>
 		<a href="contactame.html" class="cta__button">CONTACTAME</a>
@@ -131,7 +130,7 @@
 	<!--Footer-->
 
 	<section class="footer">
-		<p class="footer__parrafo">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Voluptate provident, maiores.</p>
+		<p class="footer__parrafo">Si algo te apasiona hazlo, pero siempre ten definida tus prioridades y enfócate en lo que de verdad deseas.</p>
 		<div class="footer__icons">
 			<a href="https://twitter.com/tavotrebol" target="_BLANK"><i class="fa fa-twitter fa-2x"></i></a>
 			<a href="https://www.instagram.com/tavotrebol/" target="_BLANK"><i class="fa fa-instagram fa-2x"></i></a>
@@ -139,7 +138,8 @@
 			<a href="https://www.youtube.com/channel/UC4w1yh9Y1Qun6ubFF2DW_AA" target="_BLANK"><i class="fa fa-youtube-play fa-2x"></i></a>
 		</div>
 		<div class="footer__bottom">
-			<p class="footer__parrafo2">Copyright &copy;2021. Designed by <span class="footer__span">Miguel Cárdenas</span></p>
+			<p class="footer__parrafo2">Copyright &copy;2021. Designed by</p>
+			<span class="footer__span">Miguel Cárdenas</span>
 		</div>
 	</section>
 
@@ -154,7 +154,7 @@
 	<script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 	<script src="https://kit.fontawesome.com/6bf566be2c.js" crossorigin="anonymous"></script>
-		<script type="text/javascript">
+	<script type="text/javascript">
 		window.addEvenListener('scroll', function(){
 			var scroll = document.querySelector('.scrollTop');
 			scroll.classlist.toggle("active" , window.scrollY > 500)

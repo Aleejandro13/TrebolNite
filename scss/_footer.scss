@@ -38,11 +38,11 @@
 			font-size: 1em;
 			word-spacing: 2px;
 			text-transform: capitalize;
-			.footer__span{
-				text-transform: uppercase;
-				opacity: .4;
-				font-weight: $extra-light-weight;
-			}
+		}
+		.footer__span{
+			text-transform: uppercase;
+			opacity: .4;
+			font-weight: $extra-light-weight;
 		}
 	}
 	.footer__titulo--nueva{
@@ -120,11 +120,11 @@
 			font-size: 1em;
 			word-spacing: 2px;
 			text-transform: capitalize;
-			.footer--small__span{
+		}
+		.footer--small__span{
 			text-transform: uppercase;
-				opacity: .4;
-				font-weight: $extra-light-weight;
-			}
+			opacity: .4;
+			font-weight: $extra-light-weight;
 		}
 	}
 	.footer--small__icons .fa{
